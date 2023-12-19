@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    /* padding: 15px 10px 25px 10px; */
+}
+
+/* Selector de tipo: nombre de una etiqueta -- Selector universal: * (todos los elementos del documento HTML) -- Selector de clases: .(Segudo del nombre de la clase) --- Selector de ID: #(Seguido del nombre del ID) */
+.encabezado section{
+    background-color: #79AE29;
+    padding: 10px 15px;
+}
+
+.encabezado img{
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.encabezado nav{
+    background-color: #2C2C2C;
+    color: white;
+    display: flex;    
+}
+
+.encabezado a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-desplegable li{
+    /* display: none; */
+    padding: 10px;
+    width: 200px;
+    font-size: 12px;
+    background-color: #2C2C2C;    
+    /* height: 80px; */
+}
+
+.menu-desplegable div{
+    display: none;
+    position: absolute;
+}
+
+.encabezado ul, .encabezado a{
+    padding: 10px;
+}
+
+.menu-desplegable span, .encabezado a{
+    text-transform: uppercase;
+}
+
+.menu-desplegable:hover{
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.menu-desplegable:hover div{
+    display: block;
+}
